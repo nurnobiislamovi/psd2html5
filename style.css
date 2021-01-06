@@ -1,0 +1,117 @@
+
+
+
+.tooltipa{
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipa ~ .tooltipatext {
+  visibility: hidden;
+  width: 185px;
+  background-color:#fff;
+  color:  black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  border:1px solid gray;
+
+  /*Position the tooltip*/ 
+  position: absolute;
+  top:18%;
+  right:9.5%;
+  z-index: 1;
+}
+
+.tooltipa ~ .tooltipatext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltipa:hover ~ .tooltipatext {
+  visibility: visible;
+}
+
+/*.tooltipa {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipa ~ .tooltipatext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipa ~ .tooltipatext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltipa:hover ~ .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}*/
+
+#top_header{}
+#mid_header{
+
+}
+#buttom_header{}
+
+#banner{
+	background: url("img/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 180px;
+	padding-bottom: 80px;
+}
+#banner .slider{
+	margin: 10% 0 0 30%;
+
+}
+
+#details{
+	background-color: yellow;
+}
+
+#what_we_do{
+	clip-path: polygon(0 5%, 10% 4%, 20% 3%, 30% 2%, 40% 1%, 50% 0.8%, 60% 1%, 70% 2%, 80% 3%, 90% 4%, 100% 5%, 100% 100%, 0 100%);
+}
+#our_project{
+	background-color: orange;
+}
+#meet_our_team{
+	background-color: gold;
+}
+
+#map .bottom{
+	margin-top: -10%;
+	margin-bottom: 10%;
+}
+#footer{
+
+}
